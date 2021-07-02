@@ -7,8 +7,8 @@ version = "0.1.0"
 [dependencies.aux11]
 path = "auxiliary"
 # enable this if you are going to use an external serial adapter
-# features = ["adapter"]
+ features = ["adapter"]
 
 [dependencies.heapless]
 default-features = false
-version = "0.3.7"
+version = "0.7.3"

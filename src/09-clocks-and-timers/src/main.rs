@@ -5,7 +5,7 @@ use aux9::{entry, switch_hal::OutputSwitch, tim6};
 
 #[inline(never)]
 fn delay(tim6: &tim6::RegisterBlock, ms: u16) {
-    // Set the autoreload register to ms value
+    // Set the auto reload register to ms value
     tim6.arr.write(|w| w.arr().bits(ms));
     // enable the counter
     tim6.cr1.modify(|_,w| w.cen().set_bit());
